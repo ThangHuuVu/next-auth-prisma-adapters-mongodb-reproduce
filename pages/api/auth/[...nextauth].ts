@@ -5,7 +5,6 @@ import { PrismaAdapter } from "@next-auth/prisma-adapter";
 
 const prisma = new PrismaClient()
 
-prisma.user.findFirst
 export default NextAuth({
   debug: true,
     adapter: PrismaAdapter(prisma),
